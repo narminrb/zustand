@@ -1,0 +1,43 @@
+.form{
+    border-radius: 20px;
+    border: 3px solid  #EFF0F6;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(25.448572158813477px);
+}
+
+.inputs{
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid  #E1E3E6;
+    background:  #FFF;
+    // input{
+    //     color: #5A6474;
+    //     font-family: Inter;
+    //     font-size: 81.435px;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: 122.153px; /* 150% */
+    // }
+}
+
+// .subbtn{
+//     border-radius: 30.538px;
+// background: #4A3AFF;
+// }
+
+.head{
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+}
+
+.desc{
+    color: #8A8A8A;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.label{
+    color: #404D61;
+}
