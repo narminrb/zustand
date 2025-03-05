@@ -10,11 +10,26 @@ export const useCountStore = create((set) => {
     }
 })
 
-export const useStepperFormStore = create((set) => {
-    return {
+// export const useStepperFormStore = create((set) => {
+//     return {
+//       formStepData: {},
+//       addFormStepData: (data) => {
+//         set((state) => ({ formStepData: { ...state.formStepData, ...data } }));
+//       },
+//     };
+//   });
+
+
+export const useStepperFormStore = create(
+  persist(
+    (set) => ({
       formStepData: {},
-      addFormStepData: (data) => {
-        set((state) => ({ formStepData: { ...state.formStepData, ...data } }));
-      },
-    };
-  });
+      addFormStepData: (data) =>
+        set((state) => ({ formStepData: { ...state.formStepData, ...data } })),
+    }),
+    { name: "formStepData-storage" } // Saves data in localStorage
+  )
+);
+
+// Corrected Selector
+export const SelectTodos = (state) => state.formStepData;
